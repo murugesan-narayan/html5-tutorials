@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="registration.css">
+        <style>
+            *{
+                color: blue
+            }
+            .prule{
+                color: chocolate;
+            }
+            body h2 {
+                font-style: italic;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h2 id="fp">Welcome to User Registration!</h2>
+        <h2 id="rp">Thank you!</h2>
+        <h2>User Subscribtion Form</h2>
+        <form action="">
+            Username: <input type="text" name="uname" maxlength="25"><br/><br/>
+            Password: <input type="password" name="upass"> 
+            <span class="prule">[11 chars max; 1 small, 1 upper, 1 symbol]</span><br/><br/>
+            Gender: <input type="radio" name="ugen" value="male">Male
+                    <input type="radio" name="ugen" value="female">Female <br/><br/>
+            Membership Type: <input type="checkbox" name="memTyp" value="GM">Gold
+                            <input type="checkbox" name="memTyp" value="LM" checked>Lifetime<br/><br/>
+            Card Type:  <select name="ucardTyp">
+                            <option>Visa</option>
+                            <option>Master</option>
+                        </select><br/><br/>
+            Card Number: <input type="text" name="ucardNum" maxlength="25"><br/><br/>
+            Additional Request: <textarea name="ucomments" cols="30" rows="10"></textarea><br/><br/>
+            <input type="submit" value="Submit"><input type="reset" value="Reset">
+            <input type="button" value="Validate">
+        </form>
+        <h2 id="ap">F.R.I.E.N.D.S</h2>
+    </body>
+</html>
